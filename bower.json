@@ -1,0 +1,14 @@
+{
+    "name": "iqbranding.agency",
+    "version": "0.1.0",
+    "authors": [
+        "Edwin Xico <http://xicoofficial.co/>"
+    ],
+    "description": "iqbranding sitio oficial",
+    "license": "GNU GENERAL PUBLIC LICENSE",
+    "homepage": "http://iqbranding.agency",
+    "dependencies": {
+    "jquery": "~2.0.3",
+    "bootstrap": "~3.0.0"
+  }
+}

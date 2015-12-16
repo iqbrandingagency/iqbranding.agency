@@ -1,0 +1,23 @@
+{
+  "name": "iqbranding.agency",
+  "title": "IQ Branding sitio oficial",
+  "version": "0.1.0",
+  "homepage": "http://iqbranding.agency",
+  "author": "IQ Branding",
+  "license": "GPL-3.0",
+  "description": "IQ Branding sitio oficial",
+   "repository": {
+    "type": "git",
+    "url": "https://github.com/xicoofficial/iqbranding.agency.git"
+  },
+  "bugs": {
+    "url": "https://github.com/xicoofficial/iqbranding.agency/issues"
+  },
+  "devDependencies": {
+    "grunt": "0.4.1",
+    "grunt-contrib-concat": "0.1.3",
+    "grunt-contrib-cssmin": "0.6.1",
+    "grunt-contrib-stylus": "0.21.*",
+    "grunt-contrib-watch": "0.*"
+  }
+}
