@@ -22,15 +22,24 @@
  * @link     http://iqbranding.agency
  */
 
+//IQ Branding institutional colors
 iq_black = #1e211e  // True color: #1e211e | Web safe color: #333333
 iq_orange = #ff8d3f // True color: #ff8d3f | Web safe color: #ff9933
 iq_dark_grey = #35373f // True color: #35373f | Web safe color: #333333
 iq_white = #f8f1e5 // True color: #f8f1e5 | Web safe color: #ffffcc
 iq_grey = #77777a // True color: #77777a | Web safe color; #666666
 
-font_main = 'Actor', sans-serif
-font_secondary = 'Actor', sans-serif
+//IQ Branding institutional fonts
+iq_font01 = 'Actor', sans-serif
+iq_font02 = 'Cabin'
 
+//Slider images
+iq_slider01 = "../img/slider01_Wardrobe.jpg"
+iq_slider02 = "img/slider02"
+
+/*
+* General Styling
+*/
 html
 	width 100%
 	height 100%
@@ -40,12 +49,36 @@ body
 	height 100%
 	color iq_grey
 	background iq_black
-	font 16px/1, font_main
+	font 16px/1, iq_font01
 	letter-spacing 0.48px
 	-webkit-font-smoothing antialiased
 
 div
 	display block
+	
+ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, body, html, div.paragraph, blockquote, fieldset, input
+	margin 0
+	padding 0
+
+ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, body, html, p, blockquote, fieldset, input
+	margin 0
+	padding 0
+
+h2
+	color iq_dark_grey
+	font-family iq_font02
+	font-size 1.75em
+	font-weight 900
+	margin 0 auto .5em
+	text-transform uppercase
+
+a
+	color iq_orange
+	text-decoration none
+	
+p
+	line-height 1.5
+	margin 0 auto 1em
 
 .wrapper
 	position relative
@@ -53,9 +86,95 @@ div
 	height 100%
 	background iq_black
 
+#header, #banner-wrap, #main, #footer
+	width 100%
+
+.container, .wsite-footer
+	margin 0 auto
+	max-width: 1100px
+	margin 0 auto
+	padding 0 2.5em
+	box-sizing border-box
+
+.wsite-button
+	display inline-block
+	padding 0 15px 0 0
+	text-decoration none !important
+	font-weight normal !important
+	font-size 14px !important
+	color iq_black
+	cursor pointer
+
+.wsite-button-large
+	background iq_orange
+	padding 0px
+	-webkit-border-radius 4px
+	-moz-border-radius 4px
+	border-radius 4px
+
+.wsite-button-large
+	font-size 18px !important
+	
+.wsite-button-highlight
+	color iq_white !important
+
+.wsite-button-inner
+	color iq_white !important
+	font-family iq_font01
+	display block
+	font-size 1em
+	min-height 32px !important
+	font-weight bold
+	text-transform uppercase
+	padding 3px 31px !important
+	background iq_orange
+	white-space normal
+	-webkit-border-radius 2px
+	-moz-border-radius 2px
+	border-radius 2px
+	-webkit-transition all 0.2s ease-in-out
+	-moz-transition all 0.2s ease-in-out
+	-o-transition all 0.2s ease-in-out
+	transition all 0.2s ease-in-out
+	float left
+
+.wsite-button, .wsite-editor .wsite-button
+	display inline-block
+	padding 0px
+	background iq_orange
+	-webkit-border-radius 2px
+	-moz-border-radius 2px
+	box-sizing border-box
+	max-width 100%
+	overflow hidden
+
+.wsite-button-highlight .wsite-button-inner
+	color iq_dark_grey
+
+.wsite-button-large .wsite-button-inner
+	font-size 0.9em
+	padding 4px 53px
+	background iq_orange
+	-webkit-border-radius 4px
+	-moz-border-radius 4px
+	border-radius 4px
+	min-height 42px !important
+	height 42px
+	line-height 42px
+
+.wsite-button-large.wsite-button-highlight
+	background iq_dark_grey
+
+.wsite-button-large.wsite-button-highlight, .wsite-button-large.wsite-button-highlight .wsite-button-inner
+	background iq_dark_grey
+	
+.wsite-button-large.wsite-button-highlight .wsite-button-inner
+	background iq_dark_grey
+	
+
 
 /*
-*Start Sticky-wrapper styling
+* Start Sticky-wrapper styling
 */
 .sticky-wrapper
 	height 58px
@@ -80,12 +199,6 @@ div
 .stuck
 	position fixed !important
 
-.container, .wsite-footer
-	margin 0 auto
-	max-width: 1100px
-	margin 0 auto
-	padding 0 2.5em
-	box-sizing border-box
 
 #logo, #logo a
 	text-transform uppercase
@@ -103,10 +216,6 @@ div
 	display inline-block
 	vertical-align top
 
-a
-	color iq_orange
-	text-decoration none
-
 #wsite-title
 	font-size 2em
 	
@@ -115,19 +224,112 @@ a
 
 
 /* 
-+ User agent stylesheet
+* Start page-content styling
 */
+.page-content
+	position relative
+	display block
+	top 0
+	left 0
+	min-height 100%
+	background-color iq_dark_grey
+	z-index 2
+	transition left 610ms cubic-bezier(0,.8,.55,1)
+
+/*
+* ============================= Banner ======================
+*/
+#banner-wrap
+	position relative
+	background-position center center
+	-webkit-transition all 0.3s ease-in-out
+	-moz-transition all 0.3s ease-in-out
+	-o-transition all 0.3s ease-in-out
+	transition all 0.3s ease-in-out
+	.container
+		display table
+		width 100%
+		height 100%
+		vertical-align middle
+
+.wsite-background.wsite-custom-background
+	background-size 120% !important
+
+.wsite-background
+	background-image url(iq_slider01) !important
+	background-repeat no-repeat !important
+	background-position 100.00% 26.90% !important
+	background-size 120% !important
+	background-color transparent !important
+
+.landing-page #banner
+	height 500px
+
+#banner
+	text-align center
+	display table-cell
+	vertical-align middle
+	padding 50px 0px
+	h2
+		margin 0 auto
+		color iq_white
+		font-size 4em
+		text-transform uppercase
+	p
+		margin .8em auto 1em
+	.button-wrap
+		display inline-block
+		text-align left
+		
+
+#banner p, .paragraph
+	font-size 1.3em
+	color iq_white
+
+
+/*
+* ============================= Main ======================
+*/
+
+
+/*
+* ============================= Footer ======================
+*/		
+
+
+
+/*******************************
+* User agent stylesheet
+*******************************/
 a:-webkit-any-link
 	color webkit-link
 	text-decoration underline
 	cursor auto
 
+h2 
+	display block
+	font-size 1.5em
+	-webkit-margin-before 0.83em
+	-webkit-margin-after 0.83em
+	-webkit-margin-start 0px
+	-webkit-margin-end 0px
+	font-weight bold
 
-/*
+p
+	display block
+	-webkit-margin-before 1em
+	-webkit-margin-after 1em
+	-webkit-margin-start 0px
+	-webkit-margin-end 0px
+
+
+
+
+/*******************************
  * Medium Screen
- */
+ ******************************/
 
-@media (max-width: 767px)
+@media (max-width: 767px) 
 	body
 		font-size 14px
 
@@ -136,3 +338,30 @@ a:-webkit-any-link
 
 	#logo #wsite-title
 		font-size 1.5em !important
+
+	#banner-wrap .container
+		padding 0 30px
+
+	.landing-page #banner
+		height 350px
+	
+	#banner
+		font-size 12px
+		h2
+			font-size 2.5em !important
+		p
+			font-size 1.25em !important
+		h2 *, p *
+			font-size inherit !important
+			line-height inherit !important
+		h2 *, div.paragraph *
+			font-size inherit !important
+			line-height inherit !important
+
+	.wsite-button-inner
+		padding 3px 20px
+
+	.wsite-button-large .wsite-button-inner
+		padding 4px 25px
+		min-height 0 !important
+
