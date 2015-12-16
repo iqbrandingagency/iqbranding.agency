@@ -32,10 +32,81 @@ iq_grey = #77777a // True color: #77777a | Web safe color; #666666
 //IQ Branding institutional fonts
 iq_font01 = 'Actor', sans-serif
 iq_font02 = 'Cabin'
+iq_font03 = 'Open Sans', sans-serif
 
 //Slider images
 iq_slider01 = "../img/slider01_Wardrobe.jpg"
 iq_slider02 = "img/slider02"
+
+/*******************************
+* User agent stylesheet
+*******************************/
+div
+	display block
+
+a:-webkit-any-link
+	color webkit-link
+	text-decoration underline
+	cursor auto
+
+h2 
+	display block
+	font-size 1.5em
+	-webkit-margin-before 0.83em
+	-webkit-margin-after 0.83em
+	-webkit-margin-start 0px
+	-webkit-margin-end 0px
+	font-weight bold
+
+p
+	display block
+	-webkit-margin-before 1em
+	-webkit-margin-after 1em
+	-webkit-margin-start 0px
+	-webkit-margin-end 0px
+
+hr
+	display: block;
+	-webkit-margin-before: 0.5em;
+	-webkit-margin-after: 0.5em;
+	-webkit-margin-start: auto;
+	-webkit-margin-end: auto;
+	border-style: inset;
+	border-width: 1px;
+table 
+	display table
+	border-collapse separate
+	border-spacing 2px
+	border-color iq_grey
+
+tbody
+	display table-row-group
+	vertical-align middle
+	border-color inherit
+
+tr
+	display table-row
+	vertical-align inherit
+	border-color inherit
+
+td, th
+	display table-cell
+	vertical-align inherit
+
+ul, menu, dir
+	display: block;
+	list-style-type: disc;
+	-webkit-margin-before: 1em;
+	-webkit-margin-after: 1em;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;
+	-webkit-padding-start: 40px;
+
+li
+	display list-item
+	text-align: -webkit-match-parent;
+
+
 
 /*
 * General Styling
@@ -52,9 +123,6 @@ body
 	font 16px/1, iq_font01
 	letter-spacing 0.48px
 	-webkit-font-smoothing antialiased
-
-div
-	display block
 	
 ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, body, html, div.paragraph, blockquote, fieldset, input
 	margin 0
@@ -138,6 +206,9 @@ p
 	transition all 0.2s ease-in-out
 	float left
 
+.wsite-button-highlight .wsite-button-inner
+	background iq_dark_grey
+
 .wsite-button, .wsite-editor .wsite-button
 	display inline-block
 	padding 0px
@@ -147,9 +218,6 @@ p
 	box-sizing border-box
 	max-width 100%
 	overflow hidden
-
-.wsite-button-highlight .wsite-button-inner
-	color iq_dark_grey
 
 .wsite-button-large .wsite-button-inner
 	font-size 0.9em
@@ -236,6 +304,9 @@ p
 	z-index 2
 	transition left 610ms cubic-bezier(0,.8,.55,1)
 
+.wsite-not-footer
+	text-align left
+
 /*
 * ============================= Banner ======================
 */
@@ -282,7 +353,7 @@ p
 		text-align left
 		
 
-#banner p, .paragraph
+#banner p
 	font-size 1.3em
 	color iq_white
 
@@ -290,6 +361,140 @@ p
 /*
 * ============================= Main ======================
 */
+#main 
+	background iq_white
+	padding 4em 0
+
+.wsite-section > h2:first-child
+	text-align center
+
+.paragraph
+	text-align center
+	
+.wsite-spacer
+	height 50px
+	
+hr.styled-hr 
+	width 100%
+	background-color iq_grey
+	border 0pt none
+	color iq_grey
+	height 1px
+	margin 0 auto
+	text-align center
+	visibility hidden !important
+	
+.wsite-multicol
+	position relative
+	direction ltr
+
+.wsite-multicol-table-wrap
+	margin 0 -15px
+
+.wsite-multicol-table
+	position relative
+	border-collapse collapse
+	table-layout fixed
+	width 100%
+	margin 0 !important
+	border 0 !important
+	padding 0 !important
+
+.wsite-multicol-col
+	width 33.333333333333%
+	padding 0 15px
+	vertical-align top
+	margin 0 !important
+	border 0 !important
+	-moz-box-sizing border-box
+
+.wsite-product
+	padding 10px 20px
+	min-width 100px
+	overflow hidden
+	border 1px solid iq_grey
+	border-radius 4px
+	background-color iq_white
+	box-shadow 0 1px 2px rgb(0,0,0,0.1)
+	margin-top 10px
+	margin-bottom 10px
+	.wsite-product-title
+		font-size 120%
+
+.wsite-product-right
+	display table
+
+.wsite-product-top
+	float left
+	margin 10px 0 5px
+	width 70%
+	min-width 100px
+
+.wsite-product-title, .wsite-product-price
+	margin-right 10px
+
+.wsite-product-button-wrap
+	float left
+	margin 10px 0
+	width 30%
+	display table
+	text-align right
+
+.wsite-button-highlight, .wsite-editor .wsite-button-highlight
+	background iq_dark_grey
+
+.wsite-product-description
+	clear both
+	padding-top 5px
+	margin 0 0 10px
+	ul
+		box-sizing border-box
+		margin 0px 0px 10px
+		padding 0px
+		border 0px
+		vertical-align top
+		color iq_black
+		font-family iq_font01
+		font-size 14px
+		text-align center
+		li
+			box-sizing border-box
+			margin 0px
+			padding 0px
+			border 0px
+			vertical-align top
+			text-align left
+		
+
+div.paragraph
+	line-height 1.5
+	margin 0 auto 1em
+	ul, ol
+		padding-left 3em !important
+		margin 5px 0 !important
+		overflow hidden
+	li
+		padding-left 5px !important
+		margin 3px 0 0 !important
+
+div.paragraph ul, div.paragraph ul li
+	list-style disc outside !important
+
+
+.wsite-product-description.paragraph p
+	box-sizing border-box
+	margin 0px 0px 10px
+	padding 0px
+	border 0px
+	vertical-align top
+	font-size 14px
+	line-height 21px
+	color iq_grey
+	text-align justify
+	font-family iq_font03
+
+
+
 
 
 /*
@@ -298,29 +503,7 @@ p
 
 
 
-/*******************************
-* User agent stylesheet
-*******************************/
-a:-webkit-any-link
-	color webkit-link
-	text-decoration underline
-	cursor auto
 
-h2 
-	display block
-	font-size 1.5em
-	-webkit-margin-before 0.83em
-	-webkit-margin-after 0.83em
-	-webkit-margin-start 0px
-	-webkit-margin-end 0px
-	font-weight bold
-
-p
-	display block
-	-webkit-margin-before 1em
-	-webkit-margin-after 1em
-	-webkit-margin-start 0px
-	-webkit-margin-end 0px
 
 
 
@@ -364,4 +547,13 @@ p
 	.wsite-button-large .wsite-button-inner
 		padding 4px 25px
 		min-height 0 !important
+
+	.paragraph
+		font-size 1em !important
+
+	.wsite-multicol-col
+		max-width 100% !important
+		display block
+		width auto !important
+		margin 0 auto 1em !important
 
