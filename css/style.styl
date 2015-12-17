@@ -414,6 +414,12 @@ hr.styled-hr
 	margin 0 !important
 	border 0 !important
 	-moz-box-sizing border-box
+	
+.wsite-multicol-col.col-iii
+	width 33.333333333333%
+
+.wsite-multicol-col.col-ii
+	width 50%
 
 .wsite-product
 	padding 10px 20px
@@ -635,6 +641,89 @@ blockquote
 	letter-spacing 1px
 	font-style normal !important
 	text-align left
+
+// Contact Us
+.wsite-social
+	vertical-align middle
+	white-space normal
+	font-size 40px
+	position relative
+	display inline-block
+
+.wsite-social-item
+	display inline-block
+	vertical-align top
+	margin 0 1px
+	width 24px
+	height 24px
+	background url(../img/icons/social_icons.png) no-repeat
+
+.wsite-social-facebook
+	background-position 0 0
+
+.wsite-social-twitter
+	background-position -24px 0
+
+.wsite-social-item, .wsite-editor .wsite-social-item,
+#wsite-com-product-social-sharing .wsite-com-product-social-facebook,
+#wsite-com-product-social-sharing .wsite-com-product-social-twitter,
+#wsite-com-product-social-sharing .wsite-com-product-social-pinterest
+	display: inline;
+	vertical-align: middle;
+	width: auto;
+	height: auto;
+	background-image: none;
+	background-repeat: no-repeat;
+	text-transform: none;
+	text-decoration: none;
+
+.wsite-social-item
+	margin: 5px;
+	font-size: .4em;
+	border-radius: 25px;
+	border: 2px solid #727272;
+	display: inline-block;
+	padding: 8px !important;
+	color: #727272;
+	box-sizing: border-box;
+	-webkit-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+
+.wsite-elements .wsite-social-item.first-child,
+.wsite-editor .wsite-elements .wsite-social-item.first-child
+	padding-left 8px !important
+
+.wsite-social-facebook:before
+	content "/e600"
+
+.wsite-social-twitter:before
+	content "/e601"
+
+.wsite-social-instagram:before
+	content "/e607"
+
+.wsite-social-mail:before
+	content "/e603"
+
+.wsite-social-item:before, .wsite-social-item:after,
+.wsite-editor .wsite-social-item:before, .wsite-editor .wsite-social-item:after,
+#wsite-com-product-social-sharing .wsite-com-product-social-facebook:before,
+#wsite-com-product-social-sharing .wsite-com-product-social-facebook:after,
+#wsite-com-product-social-sharing .wsite-com-product-social-twitter:before,
+#wsite-com-product-social-sharing .wsite-com-product-social-twitter:after,
+#wsite-com-product-social-sharing .wsite-com-product-social-pinterest:before,
+#wsite-com-product-social-sharing .wsite-com-product-social-pinterest:after
+	font-family: "wsocial";
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+
 
 /*
 * ============================= Footer ======================
