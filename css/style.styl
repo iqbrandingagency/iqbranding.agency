@@ -307,7 +307,7 @@ p
 .page-content
 	position relative
 	display block
-	top 0
+	top 100vh
 	left 0
 	min-height 100%
 	background-color iq_dark_grey
@@ -321,12 +321,17 @@ p
 * ============================= Banner ======================
 */
 #banner-wrap
-	position relative
+	position fixed
+	top 0
+	right 0
+	bottom 0
+	left 0
 	background-position center center
 	-webkit-transition all 0.3s ease-in-out
 	-moz-transition all 0.3s ease-in-out
 	-o-transition all 0.3s ease-in-out
 	transition all 0.3s ease-in-out
+	z-index -1
 	.container
 		display table
 		width 100%
@@ -722,7 +727,7 @@ section.module:last-child
 	margin-bottom 0
 
 section.module.parallax
-	height 200px
+	height 100%
 	background-position 50% 50%
 	background-repeat no-repeat
 	background-attachment fixed
@@ -761,7 +766,11 @@ section.module.parallax-1
 
 	.landing-page #banner
 		height 350px
-	
+
+	#banner-wrap
+		position relative
+		z-index 1
+
 	#banner
 		font-size 12px
 		h2
@@ -774,6 +783,9 @@ section.module.parallax-1
 		h2 *, div.paragraph *
 			font-size inherit !important
 			line-height inherit !important
+			
+	.page-content
+		top inherit
 
 	.wsite-button-inner
 		padding 3px 20px
