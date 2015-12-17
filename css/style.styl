@@ -22,21 +22,26 @@
  * @link     http://iqbranding.agency
  */
 
+@import "../bower_components/fontawesome/font-awesome.min.css";
+@import url('https://fonts.googleapis.com/css?family=Cabin' rel='stylesheet' type='text/css')
+
 //IQ Branding institutional colors
 iq_black = #1e211e  // True color: #1e211e | Web safe color: #333333
 iq_orange = #ff8d3f // True color: #ff8d3f | Web safe color: #ff9933
 iq_dark_grey = #35373f // True color: #35373f | Web safe color: #333333
-iq_white = #f8f1e5 // True color: #f8f1e5 | Web safe color: #ffffcc
+iq_white = #ffffff // True color: #f8f1e5 | Web safe color: #ffffcc
 iq_grey = #77777a // True color: #77777a | Web safe color; #666666
 
 //IQ Branding institutional fonts
 iq_font01 = 'Actor', sans-serif
-iq_font02 = 'Cabin'
+iq_font02 = Cabin, sans-serif
 iq_font03 = 'Open Sans', sans-serif
 
 //Slider images
 iq_slider01 = "../img/slider01_Wardrobe.jpg"
 iq_slider02 = "img/slider02"
+
+
 
 /*******************************
 * User agent stylesheet
@@ -370,7 +375,10 @@ p
 	background iq_white
 	padding 4em 0
 
-.wsite-section > h2:first-child
+.wsite-section > h2
+	text-align center
+	
+.wsite-section h2
 	text-align center
 
 .paragraph
@@ -387,7 +395,6 @@ hr.styled-hr
 	height 1px
 	margin 0 auto
 	text-align center
-	visibility hidden !important
 	
 
 // Services	
@@ -433,6 +440,7 @@ hr.styled-hr
 	margin-bottom 10px
 	.wsite-product-title
 		font-size 120%
+		text-align left
 
 .wsite-product-right
 	display table
@@ -551,16 +559,8 @@ div.paragraph ul, div.paragraph ul li
 	width 100%
 	height 100%
 	overflow hidden
-
-.wslide-slide-inner1
-	position absolute
-	top 50%
-	left 50%
-
-.wslide-slide-inner2
-	position absolute
 	img
-		float left
+		max-width 100%
 
 .wslide-overlay-top-left
 	position absolute
@@ -643,6 +643,10 @@ blockquote
 	text-align left
 
 // Contact Us
+.wsite-map iframe
+	width 100%
+	height 200px
+
 .wsite-social
 	vertical-align middle
 	white-space normal
@@ -695,18 +699,6 @@ blockquote
 .wsite-editor .wsite-elements .wsite-social-item.first-child
 	padding-left 8px !important
 
-.wsite-social-facebook:before
-	content "/e600"
-
-.wsite-social-twitter:before
-	content "/e601"
-
-.wsite-social-instagram:before
-	content "/e607"
-
-.wsite-social-mail:before
-	content "/e603"
-
 .wsite-social-item:before, .wsite-social-item:after,
 .wsite-editor .wsite-social-item:before, .wsite-editor .wsite-social-item:after,
 #wsite-com-product-social-sharing .wsite-com-product-social-facebook:before,
@@ -724,6 +716,22 @@ blockquote
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 
+
+/*
+* Parallax efect
+*/
+section.module:last-child
+	margin-bottom 0
+
+section.module.parallax
+	height 200px
+	background-position 50% 50%
+	background-repeat no-repeat
+	background-attachment fixed
+	background-size cover
+
+section.module.parallax-1
+	background-image url('../img/slider01_Wardrobe.jpg')
 
 /*
 * ============================= Footer ======================

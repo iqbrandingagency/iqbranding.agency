@@ -9,6 +9,7 @@
     "homepage": "http://iqbranding.agency",
     "dependencies": {
     "jquery": "~2.0.3",
-    "bootstrap": "~3.0.0"
+    "bootstrap": "~3.0.0",
+    "fontawesome": "~4.5.0"
   }
 }
