@@ -656,13 +656,9 @@ blockquote
 	position relative
 	display inline-block
 
-.wsite-social-item
-	display inline-block
-	vertical-align top
-	margin 0 1px
-	width 24px
-	height 24px
-	background url(../img/icons/social_icons.png) no-repeat
+
+.social-items
+	text-align center
 
 .wsite-social-facebook
 	background-position 0 0
@@ -690,12 +686,15 @@ blockquote
 	border: 2px solid #727272;
 	display: inline-block;
 	padding: 8px !important;
-	color: #727272;
+	color: iq_grey;
 	box-sizing: border-box;
 	-webkit-transition: all 0.2s ease-in-out;
 	-moz-transition: all 0.2s ease-in-out;
 	-o-transition: all 0.2s ease-in-out;
 	transition: all 0.2s ease-in-out;
+.wsite-social-item:hover
+	color iq_orange
+	border-color iq_orange
 
 .wsite-elements .wsite-social-item.first-child,
 .wsite-editor .wsite-elements .wsite-social-item.first-child
@@ -738,7 +737,23 @@ section.module.parallax-1
 /*
 * ============================= Footer ======================
 */		
+#footer
+	background iq_black
+	font-size 14px
+	line-height 1.25
+	color iq_white
 
+.powered-by
+	float right
+	padding-top 15px
+	padding-bottom 15px
+	padding-right 30px
+
+.left-footer
+	font-size 0.8em
+	float left
+	padding-top 22px
+	padding-left 30px
 
 
 
