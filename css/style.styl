@@ -50,7 +50,7 @@ div
 	display block
 
 a:-webkit-any-link
-	color webkit-link
+	//color webkit-link
 	text-decoration underline
 	cursor auto
 
@@ -307,7 +307,7 @@ p
 .page-content
 	position relative
 	display block
-	top 0
+	top 100vh
 	left 0
 	min-height 100%
 	background-color iq_dark_grey
@@ -321,12 +321,17 @@ p
 * ============================= Banner ======================
 */
 #banner-wrap
-	position relative
+	position fixed
+	top 0
+	right 0
+	bottom 0
+	left 0
 	background-position center center
 	-webkit-transition all 0.3s ease-in-out
 	-moz-transition all 0.3s ease-in-out
 	-o-transition all 0.3s ease-in-out
 	transition all 0.3s ease-in-out
+	z-index -1
 	.container
 		display table
 		width 100%
@@ -529,13 +534,11 @@ div.paragraph ul, div.paragraph ul li
 		padding 0 !important
 		vertical-align top
 
-.wslide-main
+.wslide-content
+	height 570px
 	position relative
 	z-index 2
 	width 100%
-
-.wslide-content
-	height 365px
 
 .wslide-content-inner
 	position absolute
@@ -724,7 +727,7 @@ section.module:last-child
 	margin-bottom 0
 
 section.module.parallax
-	height 200px
+	height 100%
 	background-position 50% 50%
 	background-repeat no-repeat
 	background-attachment fixed
@@ -763,7 +766,11 @@ section.module.parallax-1
 
 	.landing-page #banner
 		height 350px
-	
+
+	#banner-wrap
+		position relative
+		z-index 1
+
 	#banner
 		font-size 12px
 		h2
@@ -776,6 +783,9 @@ section.module.parallax-1
 		h2 *, div.paragraph *
 			font-size inherit !important
 			line-height inherit !important
+			
+	.page-content
+		top inherit
 
 	.wsite-button-inner
 		padding 3px 20px
@@ -792,4 +802,17 @@ section.module.parallax-1
 		display block
 		width auto !important
 		margin 0 auto 1em !important
+
+	.wslide-content
+		height 380px
+		
+/*******************************
+ * Small Screen
+ ******************************/
+
+@media (max-width: 420px)
+	.wslide-content
+		height 213px	
+
+
 
