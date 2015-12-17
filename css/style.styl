@@ -50,7 +50,7 @@ div
 	display block
 
 a:-webkit-any-link
-	color webkit-link
+	//color webkit-link
 	text-decoration underline
 	cursor auto
 
@@ -529,13 +529,11 @@ div.paragraph ul, div.paragraph ul li
 		padding 0 !important
 		vertical-align top
 
-.wslide-main
+.wslide-content
+	height 570px
 	position relative
 	z-index 2
 	width 100%
-
-.wslide-content
-	height 365px
 
 .wslide-content-inner
 	position absolute
@@ -792,4 +790,17 @@ section.module.parallax-1
 		display block
 		width auto !important
 		margin 0 auto 1em !important
+
+	.wslide-content
+		height 380px
+		
+/*******************************
+ * Small Screen
+ ******************************/
+
+@media (max-width: 420px)
+	.wslide-content
+		height 213px	
+
+
 
