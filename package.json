@@ -3,15 +3,15 @@
   "title": "IQ Branding sitio oficial",
   "version": "0.1.0",
   "homepage": "http://iqbranding.agency",
-  "author": "IQ Branding",
+  "author": "xicoofficial",
   "license": "GPL-3.0",
   "description": "IQ Branding sitio oficial",
    "repository": {
     "type": "git",
-    "url": "https://github.com/xicoofficial/iqbranding.agency.git"
+    "url": "https://github.com/iqbrandingagency/iqbranding.agency.git"
   },
   "bugs": {
-    "url": "https://github.com/xicoofficial/iqbranding.agency/issues"
+    "url": "https://github.com/iqbrandingagency/iqbranding.agency/issues"
   },
   "devDependencies": {
     "grunt": "0.4.1",
