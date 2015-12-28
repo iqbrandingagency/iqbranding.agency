@@ -418,6 +418,13 @@ hr.styled-hr
 	height 1px
 	margin 0 auto
 	text-align center
+
+
+//About us
+
+.iq-aboutus
+	height 400px
+	
 	
 
 // WhyWeDoIt
@@ -431,9 +438,9 @@ hr.styled-hr
 	.wsite-content-title
 		padding 5px 0
 		width 400px
-		background-color rgba(0, 0, 0, 0.3)
+		background-color rgba(0, 0, 0, 0.4)
 	.paragraph
-		background-color rgba(0, 0, 0, 0.3)
+		background-color rgba(0, 0, 0, 0.4)
 
 
 // Services	
@@ -556,16 +563,15 @@ div.paragraph ul, div.paragraph ul li
 
 // Portfolio
 
-.row-fit-10
-	display table
 
 .col-md-12
 	display block
 	position relative
 	table-layout fixed
 	min-height 1px
-	float left
-	width 50%
+	float center
+	margin 0 auto
+	width 700px !important
 
 .agent
 	position relative
@@ -949,7 +955,7 @@ section.module.parallax
 	text-align center
 
 section.module.parallax-1
-	background-image url('../img/parallax01.jpg')
+	background-image url('../img/slider01_Wardrobe.jpg')
 	text-align center
 	
 section.module.parallax-2
@@ -985,7 +991,7 @@ section.module.parallax-2
 		position relative
 		table-layout fixed
 		min-height 1px
-		float left
+		margin 0px auto
 		width 100%
 
 
@@ -1046,9 +1052,17 @@ section.module.parallax-2
 
 	.wslide-content
 		height 380px
-
+	.wsite-spacer
+		height 40px
 	.iq-whywedoit
 		height 450px
+		.wsite-content-title
+			width 300px
+	.iq-whywedoit-true
+		height 500px
+	.col-md-12
+		width 100% !important
+
 
 
 		
@@ -1056,10 +1070,18 @@ section.module.parallax-2
  * Small Screen
  ******************************/
 
-@media (max-width: 420px)
+@media (max-width: 470px)
 	.wslide-content
 		height 213px	
 	.iq-whywedoit
+		height 350px
+	.wsite-section
+		padding 0px 0.5em
+	.wsite-spacer
+		height 25px
+	.iq-aboutus
+		height 320px
+	.iq-whywedoit-true
 		height 400px
 
 
