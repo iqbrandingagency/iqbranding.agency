@@ -22,8 +22,15 @@
  * @link     http://iqbranding.agency
  */
 
-@import "../bower_components/fontawesome/font-awesome.min.css";
-//@import url('https://fonts.googleapis.com/css?family=Cabin' rel='stylesheet' type='text/css')
+
+
+
+@font-face {
+    font-family: Cabin;
+    src: url(../fonts/cabin/Cabin-Regular.otf);
+}
+
+
 
 //IQ Branding institutional colors
 iq_black = #1e211e  // True color: #1e211e | Web safe color: #333333
@@ -123,7 +130,7 @@ blockquote
 html
 	width 100%
 	height 100%
-
+iq_font01
 body
 	width 100%
 	height 100%
@@ -171,9 +178,7 @@ ul.list-style-none
 
 .container, .wsite-footer
 	margin 0 auto
-	max-width: 1100px
 	margin 0 auto
-	padding 0 2.5em
 	box-sizing border-box
 
 .wsite-button
@@ -209,14 +214,18 @@ ul.list-style-none
 	padding 3px 31px !important
 	background iq_orange
 	white-space normal
-	-webkit-border-radius 2px
-	-moz-border-radius 2px
-	border-radius 2px
+	-webkit-border-radius 5px
+	-moz-border-radius 5px
+	border-radius 5px
 	-webkit-transition all 0.2s ease-in-out
 	-moz-transition all 0.2s ease-in-out
 	-o-transition all 0.2s ease-in-out
 	transition all 0.2s ease-in-out
 	float left
+	
+.wsite-button-inner:hover
+	color iq_orange !important
+	background iq_grey
 
 .wsite-button-highlight .wsite-button-inner
 	background iq_dark_grey
@@ -225,12 +234,13 @@ ul.list-style-none
 	display inline-block
 	padding 0px
 	background iq_orange
-	-webkit-border-radius 2px
-	-moz-border-radius 2px
-	border-radious 2px
+	border-radius 5px
 	box-sizing border-box
 	max-width 100%
 	overflow hidden
+	-webkit-border-radius 5px
+	-moz-border-radius 5px
+
 
 .wsite-button-large .wsite-button-inner
 	font-size 0.9em
@@ -251,6 +261,8 @@ ul.list-style-none
 	
 .wsite-button-large.wsite-button-highlight .wsite-button-inner
 	background iq_dark_grey
+.wsite-button-large.wsite-button-highlight .wsite-button-inner:hover
+	background-color iq_black
 	
 
 
@@ -318,7 +330,7 @@ ul.list-style-none
 	transition left 610ms cubic-bezier(0,.8,.55,1)
 
 .wsite-not-footer
-	text-align left
+	text-align center
 
 /*
 * ============================= Banner ======================
@@ -382,6 +394,8 @@ ul.list-style-none
 #main 
 	background iq_white
 	padding 4em 0
+.wsite-section
+	padding 0 3em
 
 .wsite-section > h2
 	text-align center
@@ -404,6 +418,18 @@ hr.styled-hr
 	margin 0 auto
 	text-align center
 	
+
+// WhyWeDoIt
+.iq-whywedoit
+	height 500px
+	color iq_white
+	font-size 1.3em
+	h2
+		color iq_white
+		font-size 1.3em
+	.wsite-content-title
+		padding-top 10vw
+
 
 // Services	
 .wsite-multicol
@@ -471,7 +497,7 @@ hr.styled-hr
 
 .wsite-button-highlight, .wsite-editor .wsite-button-highlight
 	background iq_dark_grey
-
+	
 .wsite-product-description
 	clear both
 	padding-top 5px
@@ -820,9 +846,11 @@ section.module.parallax
 	background-repeat no-repeat
 	background-attachment fixed
 	background-size cover
+	text-align center
 
 section.module.parallax-1
-	background-image url('../img/parallax02.jpg')
+	background-image url('../img/slider01_Wardrobe.jpg')
+	text-align center
 
 /*
 * ============================= Footer ======================
@@ -832,7 +860,7 @@ section.module.parallax-1
 	font-size 14px
 	line-height 1.25
 	color iq_white
-
+	
 .powered-by
 	float right
 	padding-top 15px
@@ -844,6 +872,7 @@ section.module.parallax-1
 	float left
 	padding-top 22px
 	padding-left 30px
+	color iq_orange
 
 
 
@@ -860,9 +889,6 @@ section.module.parallax-1
 @media (max-width: 767px) 
 	body
 		font-size 14px
-
-	.container
-		padding 0 1em
 
 	#logo #wsite-title
 		font-size 1.5em !important
@@ -911,6 +937,9 @@ section.module.parallax-1
 
 	.wslide-content
 		height 380px
+
+	.iq-whywedoit
+		height 450px
 		
 /*******************************
  * Small Screen
@@ -919,6 +948,8 @@ section.module.parallax-1
 @media (max-width: 420px)
 	.wslide-content
 		height 213px	
+	.iq-whywedoit
+		height 400px
 
 
 
