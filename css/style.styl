@@ -394,7 +394,7 @@ ul.list-style-none
 */
 #main 
 	background iq_white
-	padding 4em 0
+	padding 4em 0 0 0
 .wsite-section
 	padding 0 9em
 
@@ -643,9 +643,9 @@ div.paragraph ul, div.paragraph ul li
 		margin-bottom 20px
 	.image
 		position relative
-		float right
+		float left
 		width 125px
-		margin 0px 0px 15px 25px
+		margin -15px 25px 0px 0px
 		img
 			filter grayscale(100%)
 			-webkit-filter grayscale(100%)
@@ -782,6 +782,11 @@ blockquote
 	text-align left
 
 // Contact Us
+.iq-contactus
+	background-color iq_grey
+	color iq_white
+	h2
+		color iq_white
 
 .wsite-form-field
 	clear both
@@ -906,10 +911,10 @@ input[type="radio"], input[type="checkbox"]
 	margin: 5px;
 	font-size: .4em;
 	border-radius: 25px;
-	border: 2px solid #727272;
+	border: 2px solid iq_white;
 	display: inline-block;
 	padding: 8px !important;
-	color: iq_grey;
+	color: iq_white;
 	box-sizing: border-box;
 	-webkit-transition: all 0.2s ease-in-out;
 	-moz-transition: all 0.2s ease-in-out;
@@ -966,7 +971,7 @@ section.module.parallax-2
 * ============================= Footer ======================
 */		
 #footer
-	background iq_black
+	background-color iq_black
 	font-size 14px
 	line-height 1.25
 	color iq_white
@@ -983,7 +988,8 @@ section.module.parallax-2
 	padding-top 22px
 	padding-left 30px
 	color iq_orange
-
+.left-align
+	text-align left
 
 
 @media (max-width: 980px)
