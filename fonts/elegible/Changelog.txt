@@ -1,0 +1,24 @@
+
+ENGLISH
+  New in version 1.1
+    - Percent, per mille and per ten thousand glyphs have been redone.
+    - Lower punctuation marks have been shifted upwards a bit.
+    - New ampersand.
+    - New small e.
+    - Numbers 4, 5, 6 et 9 (all variants) have been redone.
+    - Ligatures ff, fi, fl, ffi et ffl have been redone.
+    - New question mark (all variants).
+    - Other readability changes.
+
+
+FRANÇAIS
+  Nouveau dans la version 1.1
+    - Le symbole pourcent, pour mille, et pour dix milles ont été refaits.
+    - Les signes de ponctuations bas ont été légèrement montés.
+    - Nouvelle esperluette.
+    - Nouveau "e" minusule.
+    - Les nombres (toutes les variantes) 4, 5, 6 et 9 ont été refaits.
+    - Les ligatures ff, fi, fl, ffi et ffl ont été refaites.
+    - Nouveau point d'interrogation (et caractères associés).
+    - Autres changements variés en but d'une meilleure lisibilité.
+

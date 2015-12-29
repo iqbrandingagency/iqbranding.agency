@@ -22,14 +22,22 @@
  * @link     http://iqbranding.agency
  */
 
-
-
 /*
 @font-face {
-    font-family: Cabin;
-    src: url(../fonts/cabin/Cabin-Regular.otf);
+    font-family: Neoteric;
+    src: url(../fonts/neoteric/NEOTERIC-Regular.ttf);
+}*/
+
+@font-face {
+    font-family: Neoteric;
+    src: url(../fonts/neoteric/NEOTERIC-Bold.ttf);
 }
-*/
+
+@font-face {
+    font-family: Elegible;
+    src: url(../fonts/elegible/Elegible-Regular.ttf);
+}
+
 
 
 //IQ Branding institutional colors
@@ -40,9 +48,9 @@ iq_white = #ffff // True color: #f8f1e5 | Web safe color: #ffffcc
 iq_grey = #77777a // True color: #77777a | Web safe color; #666666
 
 //IQ Branding institutional fonts
-iq_font01 = 'Actor', sans-serif
-iq_font02 = Cabin, sans-serif
-iq_font03 = 'Open Sans', sans-serif
+iq_font01 = Elegible, sans-serif
+iq_font02 = Neoteric, sans-serif
+//iq_font02 = Cabin, sans-serif
 
 //Slider images
 iq_slider01 = "../img/slider01_Wardrobe.jpg"
@@ -131,7 +139,7 @@ blockquote
 html
 	width 100%
 	height 100%
-iq_font01
+	iq_font01
 body
 	width 100%
 	height 100%
@@ -144,6 +152,7 @@ body
 ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, body, html, div.paragraph, blockquote, fieldset, input
 	margin 0
 	padding 0
+	font-family iq_font01
 
 ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, body, html, p, blockquote, fieldset, input
 	margin 0
@@ -558,7 +567,7 @@ div.paragraph ul, div.paragraph ul li
 	line-height 21px
 	color iq_grey
 	text-align justify
-	font-family iq_font03
+	font-family iq_font01
 
 
 // Portfolio
@@ -659,7 +668,7 @@ div.paragraph ul, div.paragraph ul li
 
 
 .wslide
-	font-family arial
+	font-family iq_font01
 	font-size 13px
 	color iq_white
 	cursor default
@@ -844,7 +853,7 @@ input[type="radio"], input[type="checkbox"]
 .wsite-form-input, .wsite-search-element-input,
 #commentPostDiv .field input[type="text"],
 #commentPostArea .field textarea
-	font-family: 'Source Sans Pro', sans-serif;
+	font-family: iq_font01
 	font-size: 16px;
 	color: iq_black;
 	background: iq_white;
@@ -940,7 +949,7 @@ input[type="radio"], input[type="checkbox"]
 #wsite-com-product-social-sharing .wsite-com-product-social-twitter:after,
 #wsite-com-product-social-sharing .wsite-com-product-social-pinterest:before,
 #wsite-com-product-social-sharing .wsite-com-product-social-pinterest:after
-	font-family: "wsocial";
+	font-family: iq_font01;
 	speak: none;
 	font-style: normal;
 	font-weight: normal;
