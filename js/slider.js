@@ -5,7 +5,11 @@ itemAmt = items.length;
 function cycleItems() {
   var item = $('.p-slide').eq(currentIndex);
   items.hide();
-  item.css('display','table');
+  if (item.hasClass('testimonial')) {
+    item.css('display', 'inline-flex')
+  } else {
+    item.css('display', 'table')
+  }
 }
 
 var autoSlide = setInterval(function() {
@@ -14,7 +18,7 @@ var autoSlide = setInterval(function() {
     currentIndex = 0;
   }
   cycleItems();
-}, 5000);
+}, 6000);
 
 
 
