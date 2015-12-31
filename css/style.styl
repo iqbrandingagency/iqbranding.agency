@@ -279,6 +279,10 @@ ul.list-style-none
 /*
 * Start Sticky-wrapper styling
 */
+
+#header, .logo
+	display inline-block
+
 .sticky-wrapper
 	height 58px
 
@@ -293,6 +297,8 @@ ul.list-style-none
 	padding 13px 0
 	z-index 3
 	transition all 0.3s ease-in-out
+	position fixed
+	border-bottom 1px solid rgba(165, 94, 94, 0.2)
 	.container
 		position relative
 		display table
@@ -325,7 +331,67 @@ ul.list-style-none
 .wsite-logo img, .wsite-logo span
 	vertical-align top !important
 
+.navbar
+	.opened
+		max-height 9999px
+	ul
+		list-style-type none
+		margin 0
+		padding 0
+		overflow hidden
+		display block
+		li
+			float left
+			display block
+			width 100%
+			a
+				display block
+				color iq_white
+				text-align center
+				padding 14px 16px
+				text-decoration none
+			a:hover
+				color iq_orange
+		li:hover
+			background-color iq_dark_grey
+.js .navbar
+	clip rect(0 0 0 0)
+	max-height 0
+	position absolute
+	display block
+	overflow hidden
+	zoom 1
 
+
+@media screen and (min-width: 720px)
+	.js .navbar
+		position relative
+	.js .navbar.closed
+		max-height none
+	.nav-toggle
+		display none
+
+	.navbar
+		ul
+			display inline-flex
+		li
+			width 120px
+			display block
+
+
+.nav-toggle {
+	vertical-align: middle;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+
+	
 /* 
 * Start page-content styling
 */
